@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifeheck OS - Light Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Desktop Background -->
+  <div id="desktop">
+    <div class="icon" onclick="openApp('calculator')">
+      <img src="icons/calculator.png" alt="Calculator">
+      <span>Calculator</span>
+    </div>
+    <div class="icon" onclick="openApp('notes')">
+      <img src="icons/notes.png" alt="Notes">
+      <span>Notes</span>
+    </div>
+    <div class="icon" onclick="openApp('browser')">
+      <img src="icons/browser.png" alt="Browser">
+      <span>Browser</span>
+    </div>
+  </div>
+
+  <!-- Start Menu -->
+  <div id="startMenu">
+    <button onclick="openApp('calculator')">Calculator</button>
+    <button onclick="openApp('notes')">Notes</button>
+    <button onclick="openApp('browser')">Browser</button>
+  </div>
+
+  <button id="startBtn" onclick="toggleStartMenu()">Start</button>
+
+  <!-- App Windows -->
+  <div id="appContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
