@@ -1,0 +1,90 @@
+/* Light Mode Theme */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+#desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.icon {
+  width: 80px;
+  text-align: center;
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+}
+
+#startBtn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startMenu {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#startMenu button {
+  display: block;
+  margin: 5px 0;
+  padding: 8px 15px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.appWindow {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.appHeader {
+  background: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appContent {
+  padding: 10px;
+  height: calc(100% - 30px);
+  overflow: auto;
+}
